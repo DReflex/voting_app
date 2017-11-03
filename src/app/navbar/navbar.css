@@ -1,0 +1,77 @@
+body{margin:0; padding:0}
+.navbar{
+  margin:0;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+.navbar-default{
+  background-color: #343966;
+  border:0;
+  border-radius: 0;
+}
+.chart{
+  margin:auto;
+  margin-left: 150px;
+  width:100px;
+  height:100px;
+  position:absolute;
+  background-color:#343966;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+
+}
+.chart img{
+  margin: 10%;
+  width:80%;
+  height: auto;
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+  border:1px solid rgb(28, 27, 105);
+  border-radius: 50%;
+}
+.fLogin{
+  margin-top: 10px;
+  width:50px;
+  background-color: #3F5B99;
+  height:30px;
+  border-radius: 4px;
+
+}
+.fLogin img{
+  margin:0 10px;
+  width:30px;
+  height:auto;
+}
+.fLogin:hover{
+  background-color: #343966;
+  cursor: pointer;
+}
+.fLogin i {
+  margin: 2px 12px;
+  font-size: 25px;
+  color:#FFF;
+}
+.navbar-header .navbar-brand{
+  color:#FFF;
+}
+.navbar-default .navbar-nav>li>a{
+  color:#FFF;
+}
+.navbar-default .navbar-nav>li>a i{
+  font-size: 18px;
+  margin-right: 3px;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-header .navbar-brand:hover{
+  background-color: #3F5B99;
+  color:#FFF;
+}
+.navbar-default .navbar-nav>li>a:focus{
+  color:#FFF;
+  background-color: #3F5B99;
+
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

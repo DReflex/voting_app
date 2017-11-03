@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Sunshiney');
+
+.popup{
+  position: absolute;
+  width: 100%;
+  height: 87%;
+  background: rgb(60, 66, 115);
+}
+.popup:focus{
+  outline:none;
+}
+.popup i{
+  margin:auto;
+  position: absolute;
+  right:30px;
+  margin-top: -25px;
+  font-size: 50px;
+  color: rgba(193, 193, 193, 0.7);
+}
+.popupContainer{
+  width:95%;
+  margin: auto;
+  margin-top:40px;
+  display: flex;
+  flex-direction: row;
+}
+.Pie{
+  margin: auto;
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+  width:50%;
+  height:auto;
+}
+.vote{
+  width: 90%;
+}
+.voteContainer{
+  width:40%;
+  text-align: center;
+  color: rgb(77, 108, 156)
+}
+.voteContainer h2 {
+    font-size: 27px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgb(162, 183, 219);
+}
+.voteContainer select{
+  margin: auto;
+  width:60%;
+  color:#000;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: rgb(60, 155, 209);
+  border: none;
+}
+.voteContainer select option:focus{
+  outline: none;
+  border:none;
+}
+
+/*form create */
+.formVote{
+  width: 80% !important;
+}
+.room{
+  margin-bottom: 0 !important;
+}
+.headerContainer{
+  flex-direction: column !important;
+}
+.bottom{
+  height:40px !important;
+}
+.gradient{
+  height:30px !important;
+}
+.plus{
+  border-radius: 10px;
+}
+.plus i{
+  position: static;
+  margin: auto;
+  font-size: 15px;
+  color: rgb(223, 112, 71);
+}
+.plus:hover{
+  background-color: rgb(206, 234, 242) ;
+}
+#correct{
+  font-size: 20px;
+  color:rgb(65, 204, 0);
+}
+#correct:hover{
+  color: rgb(42, 122, 4);
+}
