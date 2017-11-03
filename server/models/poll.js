@@ -26,3 +26,6 @@ const PollSchema = new Schema ({
 });
 const Poll = mongoose.model('poll', PollSchema);
 module.exports = Poll;
+// User.create({category: 1, title: 'Minion'}, function(err, doc) {
+//     // At this point the jobs collection is created.
+// });

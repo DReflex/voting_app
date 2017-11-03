@@ -4,9 +4,14 @@ const mongoose = require('mongoose');
 const path = require('path');
 
 const app =express();
-app.set('port', (process.env.PORT || 4000));
-var promise = mongoose.connect('mongodb://localhost/poll', {
-  useMongoClient: true,
+app.set('port', (process.env.PORT || 8080));
+var mlab = "mongodb://voting:password@ds245715.mlab.com:45715/voting_app"
+var options={
+  user: "voting",
+  pass: "password"
+}
+var promise = mongoose.connect(mlab,{
+  useMongoClient: true
   /* other options */
 });
 mongoose.Promise = global.Promise;
@@ -20,12 +25,12 @@ app.use('/api', require('./routes/api'));
 //init app
 //build part of the react app
 //uncoment this after npm build
-/*app.use('/', express.static(path.join(__dirname, '../build')));
+app.use('/', express.static(path.join(__dirname, '../build')));
 
 app.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname, '../build/index.html'));
 });
-*/
+
 //err
 app.use(function(err, req, res, next){
   //console.log(err);
