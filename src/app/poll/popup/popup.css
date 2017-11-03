@@ -94,3 +94,27 @@
 #correct:hover{
   color: rgb(42, 122, 4);
 }
+@media screen and (max-width:720px){
+  .popupContainer{
+    flex-direction: column;
+    margin-top: 10px;
+  }
+.Pie{
+  margin: auto;
+  width:100%;
+}
+.voteContainer{
+  margin: auto;
+  width:100%;
+}
+.chartjs-render-monitor{
+  width:95%;
+  height: auto;
+  margin: auto;
+}
+.formVote{
+  width:90% !important;
+  margin: 50px auto !important;
+}
+
+}

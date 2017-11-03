@@ -81,3 +81,21 @@
   width:45%;
   transition: 500ms all;
 }
+@media screen and (max-width:720px){
+  .home-container{
+    background-position: left;
+  }
+  .container{
+    width:95%;
+  }
+  .redirect-buttons{
+    width:100%;
+  }
+  .connect{
+    width:40%;
+    height: auto;
+  }
+  .logo{
+    width:70%;
+  }
+}

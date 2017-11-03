@@ -181,3 +181,27 @@
 .delete:hover{
   color:rgb(80, 4, 3);
 }
+@media screen and (max-width:  720px){
+  .p-bar{
+    margin:50px auto;
+  }
+  .formCreate{
+    width:90%;
+    margin: 50px auto;
+  }
+  .name{
+    width:45%;
+  }
+  .options{
+    width:45%;
+  }
+  .input{
+    width:90%;
+  }
+  .button{
+    font-size: 16px;
+  }
+  .submit{
+    width:70%;
+  }
+}
