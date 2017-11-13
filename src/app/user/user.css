@@ -11,32 +11,21 @@
   border-radius: 5px;
   border: 2px solid #FFF;
   position: relative;
-}
-.p-container{
-  width:80%;
-  height:80%;
-  margin: 10%;
-  border-radius: 50%;
-  background: rgb(139, 213, 230);
-  color:rgb(3, 3, 3);
+  background: #8AD4E6;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  border: 1px solid rgb(121, 121, 121);
 }
-.p-container p{
-  width:50%;
-  display: flex;
-  justify-content: center;
+.p-box i{
+  margin:auto;
+  font-size: 60px;
   text-align: center;
-  margin:3px auto;
-  font-size: 16px;
-  font-weight: 700;
 }
-.p-container hr{
-  margin:0;
-  border-top: 1px solid rgb(121, 121, 121);
+.p-box p{
+  margin: auto;
+  text-align: center;
+  margin-bottom: 5px;
 }
+
 .button {
   margin: auto 15px;
   margin-bottom: 5px;

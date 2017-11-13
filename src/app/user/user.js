@@ -82,7 +82,7 @@ class User extends React.Component {
         colors: colors
       }
     }
-  
+
     fetch('/api/poll', {
               method: 'POST',
               mode: 'CORS',
@@ -106,11 +106,9 @@ class User extends React.Component {
     return (
       <div>
         <div className="p-bar">
-          <div style={{background:color[1]}} className="p-box">
-            <div className="p-container">
-              <p className="head">{color[0]} </p><hr/>
-              <p style={{color: color[1]}}> {color[1]}</p>
-            </div>
+          <div  className="p-box">
+              <i style={{color:color[1]}} class="fa fa-user" aria-hidden="true"></i>
+              <p > {this.props.user.name}</p>
           </div>
           <div className="button active">Make new</div>
           <div onClick={this.myPolls} className="button">My Polls</div>
