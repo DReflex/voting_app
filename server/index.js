@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 
 const app =express();
-app.set('port', (process.env.PORT || 8080));
+app.set('port', (process.env.PORT || 3000));
 var mlab = "mongodb://voting:password@ds245715.mlab.com:45715/voting_app"
 var options={
   user: "voting",
@@ -25,11 +25,11 @@ app.use('/api', require('./routes/api'));
 //init app
 //build part of the react app
 //uncoment this after npm build
-// app.use('/', express.static(path.join(__dirname, '../build')));
-//
-// app.get('/*', function (req, res) {
-//     res.sendFile(path.join(__dirname, '../build/index.html'));
-// });
+app.use('/', express.static(path.join(__dirname, '../build')));
+
+app.get('/*', function (req, res) {
+    res.sendFile(path.join(__dirname, '../build/index.html'));
+});
 
 //err
 app.use(function(err, req, res, next){
