@@ -14,6 +14,9 @@ var promise = mongoose.connect(mlab,{
   useMongoClient: true
   /* other options */
 });
+mongoose.connection.on('open', function(err, doc){
+    console.log("connection established");
+  });
 mongoose.Promise = global.Promise;
 
 mongoose.Promise = global.Promise;

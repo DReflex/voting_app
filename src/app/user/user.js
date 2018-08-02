@@ -85,7 +85,7 @@ class User extends React.Component {
 
     fetch('/api/poll', {
               method: 'POST',
-              mode: 'CORS',
+              mode: 'no-cors',
               body: JSON.stringify({
                 name:data.name,
                 desc: data.desc,

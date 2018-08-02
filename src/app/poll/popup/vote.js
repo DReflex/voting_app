@@ -39,7 +39,7 @@ class Vote extends React.Component{
 
   fetch(`/api/poll/${this.props.showPoll.id}`, {
           method: 'PUT',
-          mode: 'CORS',
+          mode:"CROS",
           body: JSON.stringify({
             data:{
               value: values,
@@ -117,7 +117,7 @@ class Vote extends React.Component{
       this.props.dispatch(showPoll(show))
       fetch(`/api/poll/${this.props.showPoll.id}`, {
               method: 'PUT',
-              mode: 'CORS',
+              mode:"CROS",
               body: JSON.stringify({
                 data:show.data
               }),
